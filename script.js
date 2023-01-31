@@ -8,6 +8,9 @@ async function getdata(file) {
   show(json);
 }
 
+document.querySelector(".luk").addEventListener("click", () => (popup.style.display = "none"));
+
+// Loads the json file and displays the data according to the parameters in the file
 function show(json) {
   console.log(json);
   const container = document.querySelector("main");
@@ -20,6 +23,7 @@ function show(json) {
   });
 }
 
+// Runs the function when clicking an actor and displays the popup
 function showDetails(actor) {
   console.log(actor);
   popup.style.display = "block";
