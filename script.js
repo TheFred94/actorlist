@@ -18,6 +18,7 @@ function show(json) {
   json.forEach((actor) => {
     const clone = template.cloneNode(true).content;
     clone.querySelector(".actor").textContent = actor.fullname;
+    clone.querySelector(".movie").textContent = actor.movie;
     clone.querySelector("article").addEventListener("click", () => showDetails(actor));
     container.appendChild(clone);
   });

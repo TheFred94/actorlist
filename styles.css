@@ -9,10 +9,13 @@ main {
 }
 
 article {
-  display: flex;
   padding-block: 20px;
   cursor: pointer;
   padding-inline-start: 50px;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  flex-wrap: nowrap;
 }
 
 #popup {
