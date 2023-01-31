@@ -15,8 +15,16 @@ function show(json) {
   json.forEach((actor) => {
     const clone = template.cloneNode(true).content;
     clone.querySelector(".actor").textContent = actor.fullname;
+    clone.querySelector("article").addEventListener("click", () => showDetails(actor));
     container.appendChild(clone);
   });
+}
+
+function showDetails(actor) {
+  console.log(actor);
+  popup.style.display = "block";
+  document.querySelector(".popup_navn").textContent = actor.fullname;
+  document.querySelector(".popup_film").textContent = actor.movie;
 }
 
 getdata(file);

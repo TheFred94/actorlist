@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+article {
+  display: flex;
+  padding-block: 20px;
+}
+
+#popup article {
+  width: 80vw;
+  display: flex;
+  margin: 4rem auto;
+  border-radius: 25px;
+  padding: 12px;
+  background-color: rgb(164, 7, 7);
+}
+
+.luk {
+  position: fixed;
+  padding: 1rem;
+  font-size: 1.7rem;
+  font-weight: bolder;
+  color: white;
+  cursor: pointer;
+}
