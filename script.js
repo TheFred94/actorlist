@@ -2,6 +2,13 @@ let actors;
 let filter = "all";
 const actorData = "actors.json";
 const header = document.querySelector("h1");
+// Colored bg depending on the movie. ChatGPT helped me with this one
+const movieColors = {
+  Goodfellas: "color_goodfellas",
+  "Pulp Fiction": "color_pulp_fiction",
+  Inception: "color_inception",
+  "Fight Club": "color_fight_club",
+};
 
 // Click event on nav which runs filterActors function when clicked
 const filterBtn = document.querySelectorAll("nav button");
@@ -42,6 +49,8 @@ function showActors(actors) {
       clone.querySelector(".actor_name").textContent = actor.fullname;
       clone.querySelector(".movie_name").textContent = actor.movie;
       clone.querySelector("article").addEventListener("click", () => showActorDetails(actor));
+      // Colored bg depending on the movie. ChatGPT helped me with this one
+      clone.querySelector("article").classList.add(movieColors[actor.movie]);
       container.appendChild(clone);
       console.log("New actors");
     }

@@ -64,3 +64,16 @@ article {
   padding-block-start: 20px;
   color: #2f2f2f;
 }
+
+.color_goodfellas {
+  background-color: green;
+}
+.color_pulp_fiction {
+  background-color: aquamarine;
+}
+.color_inception {
+  background-color: bisque;
+}
+.color_fight_club {
+  background-color: antiquewhite;
+}
