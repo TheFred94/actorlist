@@ -55,4 +55,4 @@ function showActorDetails(actor) {
   document.querySelector(".details_movie_name").textContent = actor.movie;
 }
 
-getActorData(actorData);
+getActorData();
