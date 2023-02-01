@@ -51,8 +51,8 @@ function showActors(actors) {
 function showActorDetails(actor) {
   console.log(actor);
   popup.style.display = "block";
-  document.querySelector(".actor_name").textContent = actor.fullname;
-  document.querySelector(".movie_name").textContent = actor.movie;
+  document.querySelector(".details_actor_name").textContent = actor.fullname;
+  document.querySelector(".details_movie_name").textContent = actor.movie;
 }
 
 getActorData(actorData);
